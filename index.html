@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f172a" />
     <title>Quiz Preview</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="container">
       <header class="header">
-        <h1>Quiz Preview</h1>
+        <h1>GMAT Practice Quiz</h1>
         <p>Random 10 questions each time you reset or reload.</p>
+        <div class="meta">
+          <span id="poolCount" class="pill">Question bank: 0</span>
+          <span id="progressCount" class="pill">Answered: 0/0</span>
+        </div>
       </header>
 
       <section id="status" class="status">Loading questions...</section>
@@ -21,7 +26,7 @@
         <button id="resetBtn" type="button">Reset and Pick 10 New</button>
       </footer>
 
-      <section id="result" class="status"></section>
+      <section id="result" class="status hidden"></section>
     </main>
 
     <script type="module" src="./app.js"></script>
