@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Preview</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Quiz Preview</h1>
+        <p>Random 10 questions each time you reset or reload.</p>
+      </header>
+
+      <section id="status" class="status">Loading questions...</section>
+      <section id="quiz" class="quiz hidden"></section>
+
+      <footer class="actions">
+        <button id="submitBtn" type="button" disabled>Submit</button>
+        <button id="resetBtn" type="button">Reset and Pick 10 New</button>
+      </footer>
+
+      <section id="result" class="status"></section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
